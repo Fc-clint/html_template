@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic website settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EDIT: Change your website title here -->
+    <title>My Portfolio</title>
+
+    <!-- CONNECT CSS: This loads your design -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <a href="#home" class="logo">MY PORTFOLIO.</a>
+
+        <!-- Mobile menu button -->
+        <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="nav-links">
+            ☰
+        </button>
+
+        <!-- Navigation links -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#youtube-channel" class="btn btn-primary">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION: Edit your name and introduction -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="greeting">HELLO, I'M</p>
+
+           <h1>
+    <span>Vincent Clint</span>
+    <span class="highlight">Future Web Developer.</span>
+</h1>
+
+            <p class="description">
+                I create animations and turn ideas
+                into reality using my art of passion.
+            </p>
+
+            <div class="button-group">
+    <a href="#youtube-channel" class="btn btn-primary">
+        View My Work
+    </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+        <h2>About Me</h2>
+        <p>
+            
+            I am a student in BSIT-1 passionate web developer and a professional animator
+            with a strong background in creating engaging digital experiences.
+and is new to web development. 
+        </p>
+    </section>
+
+
+
+
+<!-- YOUTUBE CHANNEL SECTION -->
+<section id="youtube-channel" class="youtube-channel">
+    <h2> (Projects) My YouTube Channel </h2>
+
+    <div class="channel-card">
+        <!-- Your YouTube channel profile image -->
+        <img
+            src="https://cdn.imageurlgenerator.com/uploads/52fdbd50-a041-4efe-a9fd-9888219a02a8.png"
+            alt="FC Clint YouTube profile picture"
+            class="channel-image"
+        >
+
+        <div class="channel-info">
+            <!-- Your channel name -->
+            <h3>FC-Clint</h3>
+
+            <!-- Your channel description -->
+            <p>
+                Welcome to FC Clint! Check out my YouTube videos
+                and explore my latest content.
+            </p>
+
+            <!-- Link to your YouTube channel -->
+            <a
+                href="https://www.youtube.com/@Fc-clint"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-button"
+            >
+                Visit My Channel
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ==========================================
+     YOUTUBE VIDEO SECTION
+     Add or remove videos inside video-container.
+     ========================================== -->
+<section class="section video-section" id="videos">
+
+    <!-- SECTION TITLE -->
+    <h2>My Videos</h2>
+    <p>Here are some of my favorite videos.</p>
+
+    <!-- CONTAINER FOR BOTH VIDEOS -->
+    <div class="video-container">
+
+        <!-- VIDEO 1: YOUR ORIGINAL VIDEO -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/w9S0BAmCnXw"
+                title="YouTube Video 1"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- VIDEO 2: REPLACE WITH YOUR OWN VIDEO ID -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/0ww2Koa8jIo"
+                title="YouTube Video 2"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- CONTACT SECTION: Change this to your email -->
+    <section class="section contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's work together on something amazing!</p>
+        <a
+            class="btn btn-primary"
+            href="mailto:vincentclintjumaoas@gmail   .com">
+            Email Me
+        </a>
+
+        <p1>Or reach me through phone number (#09278753195) </p2>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Vincent Clint A. Jumao-as. All rights reserved.</p>
+    </footer>
+
+    <!-- CONNECT JAVASCRIPT: Put this before closing body -->
+    <script src="script.js"></script>
+
+</body>
+</html>

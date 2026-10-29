@@ -1,0 +1,471 @@
+
+/* ==========================================
+   PART 1: GLOBAL SETTINGS
+   Change the default font and page behavior.
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    font-family:'Amatic SC', cursive;
+    background: #101722;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   PART 2: NAVIGATION BAR
+   Edit logo size, link spacing, and colors.
+   ========================================== */
+
+/* Fixed Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px 30px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent sections from hiding behind the navbar */
+section {
+    scroll-margin-top: 90px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #72c7ff;
+}
+
+/* Mobile menu button: hidden on desktop */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   PART 3: HOME BACKGROUND IMAGE
+   CHANGE THE IMAGE URL HERE.
+
+   For a local image, use:
+   url("images/background.jpg")
+   ========================================== */
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 12, 25, 0.60),
+            rgba(5, 12, 25, 0.80)
+        ),
+        url("https://cdn.imageurlgenerator.com/uploads/4eb3a2d2-f5f8-4751-849d-cece480912a8.gif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ==========================================
+   PART 4: INTRODUCTION TEXT
+   Edit heading size, paragraph size, and spacing.
+   ========================================== */
+.hero-content {
+    max-width: 1000px;
+    padding: 140px 12% 70px;
+}
+
+.greeting {
+    color: #8fd3ff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+h1 span {
+    display: block;
+    font-size: clamp(10px, 7vw, 40px);
+}
+.hero-content h1 {
+    font-size: clamp(20px, 7vw, 76px);
+    font-family:'Amatic SC', cursive;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+/*web dev */
+.highlight {
+    color: #8fd3ff;
+}
+
+.description {
+    max-width: 580px;
+    font-size: 20px;
+    color: #e0e7f0;
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   PART 5: BUTTONS
+   Change button background, border, and shape.
+   ========================================== */
+.button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #72c7ff;
+    color: rgba(16, 23, 34, 0.5);
+    border: 2px solid #72c7ff;
+}
+
+.btn-primary:hover {
+    background: white;
+    border-color: white;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #101722;
+}
+
+
+/* ==========================================
+   PART 6: GENERAL CONTENT SECTIONS
+   Edit section padding and heading appearance.
+   ========================================== */
+.section {
+    padding: 85px 12%;
+    scroll-margin-top: 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about,
+.contact {
+    background: #416ca2;
+}
+
+.about p,
+.contact p {
+    color: #d5deea;
+}
+
+
+/* ==========================================
+   PART 7: PROJECT CARDS
+   Add or remove cards in the HTML.
+   The CSS automatically adjusts the grid.
+   ========================================== */
+.project-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.project-card {
+    background: #1b293a;
+    border: 1px solid #304158;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #8fd3ff;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #c4cfdd;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    color: #8fd3ff;
+}
+
+
+/* ==========================================
+   PART 8: FOOTER
+   Change footer color and spacing here.
+   ========================================== */
+footer {
+    background: #0a101a;
+    color: #aeb9c8;
+    text-align: center;
+    padding: 22px;
+}
+
+
+/* ==========================================
+   PART 9: MOBILE RESPONSIVENESS
+   Styles for phones and smaller screens.
+   ========================================== */
+@media (max-width: 650px) {
+    .navbar {
+        padding: 20px 6%;
+    }
+
+    /* Show the menu button on mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide the menu until the button is clicked */
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        background: #172333;
+        border-radius: 8px;
+    }
+
+    /* JavaScript adds this class to show the menu */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-content {
+        padding: 150px 7% 70px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(36px, 10vw, 52px);
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    .section {
+        padding: 65px 7%;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* ==========================================
+   VIDEO SECTION BACKGROUND AND SPACING
+   ========================================== */
+.video-section {
+    background-color: #101722;
+    text-align: center;
+    padding: 80px 5%;
+}
+
+/* ==========================================
+   VIDEO LAYOUT
+   EDIT JUSTIFY-CONTENT TO MOVE THE VIDEOS.
+   ========================================== */
+.video-container {
+    display: flex;
+    justify-content: flex-start; /* Align videos to the LEFT */
+    align-items: flex-start;
+    flex-wrap: wrap;             /* Wrap on smaller screens */
+    gap: 25px;                   /* Space between videos */
+
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* ==========================================
+   EACH VIDEO CARD
+   Controls the width of each video.
+   ========================================== */
+.video-card {
+    width: calc(50% - 13px); /* Two videos per row */
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Make the YouTube player fill its card */
+.video-card iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* ==========================================
+   MOBILE: STACK VIDEOS ON SMALL SCREENS
+   ========================================== */
+@media (max-width: 600px) {
+    .video-card {
+        width: 100%;
+    }
+}
+
+/* YOUTUBE CHANNEL SECTION */
+.youtube-channel {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #0a0f17; /* Change the section background here */
+}
+
+.youtube-channel h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.channel-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background:#172333;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.channel-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; /* Makes the channel image circular */
+    object-fit: cover;
+}
+
+.channel-info {
+    flex: 1;
+}
+
+.channel-info h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.channel-info p {
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+.channel-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff0000; /* YouTube red */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.channel-button:hover {
+    background-color: #cc0000;
+}
+
+/* Makes the channel card fit smaller screens */
+@media (max-width: 600px) {
+    .youtube-channel {
+        padding: 40px 6%;
+    }
+
+    .channel-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .channel-image {
+        width: 120px;
+        height: 120px;
+    }
+}
